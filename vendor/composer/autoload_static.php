@@ -4,21 +4,18 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc201eaef1cc1b1b9ad218f34ac85d8ea
+class ComposerStaticInit726e80a3237e5d936ad891771de96520
 {
     public static $prefixLengthsPsr4 = array (
-        'S' => 
-        array (
-            'SON\\Store\\' => 10,
-        ),
         'P' => 
         array (
+            'PuntelFig\\SoN_PHP\\PSRs\\' => 23,
             'Psr\\Log\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'SON\\Store\\' => 
+        'PuntelFig\\SoN_PHP\\PSRs\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -31,8 +28,8 @@ class ComposerStaticInitc201eaef1cc1b1b9ad218f34ac85d8ea
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc201eaef1cc1b1b9ad218f34ac85d8ea::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc201eaef1cc1b1b9ad218f34ac85d8ea::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit726e80a3237e5d936ad891771de96520::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit726e80a3237e5d936ad891771de96520::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
