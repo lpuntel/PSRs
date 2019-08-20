@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SON\\Store\\" : "src"
+            "PuntelFig\\SoN_PHP\\PSRs\\" : "src"
         }
     }
 }
